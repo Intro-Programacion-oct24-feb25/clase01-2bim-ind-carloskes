@@ -20,7 +20,7 @@ public class Ejercicio12 {
         double celc;
         
         int contador = 0;
-        int num4 = 120;
+        
         String cadenaFinal = "";
 
         
