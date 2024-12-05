@@ -18,24 +18,27 @@ public class Ejercicio3 {
         entrada.useLocale(Locale.US);
 
         String asd = "*";
+        int contador;
 
         int i;
 
         String cadenaFinal = "";
 
-        for (i = 1; i <= 10; i++) {
-            for (int contador = 1; contador <= i; contador++) {
-                
+        for (i = 1; i <= 5; i++) {
+            for (contador = 1; contador <= i; contador++) {
+
                 System.out.printf("%s", "*");
             }
-            for (i = 5; i >= 1; i--) {
-            
-                
+            System.out.println();
+        }
+        for (i = 5; i >= 1; i--) {
+            for (contador = 1; contador <= i; contador++) {
+
                 System.out.printf("%s", "*");
             }
             System.out.println();
 
         }
-        
+
     }
 }
