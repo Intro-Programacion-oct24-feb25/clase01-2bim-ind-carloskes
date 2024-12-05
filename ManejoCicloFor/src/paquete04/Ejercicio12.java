@@ -3,6 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package paquete04;
+import java.util.Locale;
+import java.util.Scanner;
 
 /**
  *
@@ -11,21 +13,28 @@ package paquete04;
 public class Ejercicio12 {
 
     public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        entrada.useLocale(Locale.US);
 
-        int num;
-        int num2 = 60;
-        int num3 = 90;
+        double faren;
+        double celc;
+        
+        int contador = 0;
         int num4 = 120;
         String cadenaFinal = "";
 
-        for (num = 30; num >= 10; num--) {
+        
+        
+        for (faren = 20; faren <= 100; faren+=4) {
+            
+            celc = (5.0/9.0)*(faren - 32);
+            
 
-            cadenaFinal = String.format("%s%d-%d-%d-%d\n",
-                    cadenaFinal, num, num2, num3, num4);
-
-            num2 = num2 - 2;
-            num3 = num3 - 3;
-            num4 = num4 - 4;
+            cadenaFinal = String.format("%s(Operación)(%d)Fahrenheit:%.2f ==> "
+                    + "Celcius:%.2f\n",
+                    cadenaFinal,contador,faren,celc);
+            contador=contador+1;
+            
 
         }
         System.out.printf("%s\n", cadenaFinal);
