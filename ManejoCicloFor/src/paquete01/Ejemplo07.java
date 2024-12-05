@@ -20,7 +20,7 @@ public class Ejemplo07 {
             // System.out.printf("Tabla de multiplicar del número %d\n", i);
             mensajeFinal = String.format("%sTabla de multiplicar del número %d\n",
                     mensajeFinal, i);
-            mensajeFinal2 = String.format("\n%sTabla de Sumar del número %d",
+            mensajeFinal2 = String.format("%sTabla de Sumar del número %d\n",
                     mensajeFinal2, i);
             for (int contador = 1; contador <= 12; contador++) {
                 operacion = i * contador;
